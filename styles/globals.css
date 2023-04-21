@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-
 @font-face {
-  font-family: 'interstate-light';
+  font-family: 'Interstate-light';
   src: url('/assets/fonts/interstate-light.otf');
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'interstate-regular';
+  font-family: 'Interstate-regular';
   src: url('/assets/fonts/interstate-regular.otf');
   font-style: normal;
   font-display: swap;
 }
-/* @font-face {
-  font-family: 'SpaceMono-regular';
-  src: url('/assets/fonts/SpaceMono-regular.otf');
+@font-face {
+  font-family: 'SpaceMono-Regular';
+  src: url('/assets/fonts/SpaceMono-Regular.otf');
   font-style: normal;
   font-display: swap;
-} */
+}
 
 h1 {
   font-family: 'Space Mono', monospace;
@@ -53,4 +51,22 @@ h4 {
   line-height: 32px;
   letter-spacing: 8%;
   font-weight: normal;
+}
+
+.p14 {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+}
+
+.p48 {
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+}
+
+.c-btn {
+  border: 1px solid #2c2e31;
+  border-radius: 8px;
+  padding: 11px 24px;
 }

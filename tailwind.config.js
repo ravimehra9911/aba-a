@@ -6,8 +6,15 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    colors: {
+      yellowColor: '#FDFADB',
+    },
     extend: {
-      fontFamily: {},
+      fontFamily: {
+        interstateLight: ['Interstate-light', 'san-serif'],
+        interstateRegular: ['Interstate-regular', 'san-serif'],
+        spaceMonoRegular: ['SpaceMono-Regular', 'sans'],
+      },
     },
   },
   plugins: [],
