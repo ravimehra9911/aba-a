@@ -24,7 +24,7 @@ const Cart = ({ open, setOpen }) => {
           <hr />
           <div>
             <button>EMPTY CART</button>
-            <Link href="/checkout">
+            <Link href="/checkoutAba">
               <button>CHECK OUT</button>
             </Link>
           </div>

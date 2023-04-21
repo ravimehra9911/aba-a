@@ -1,4 +1,4 @@
-import Cart from '@/components/Cart';
+import Cart from '@/components/cart';
 import Image from 'next/image';
 import { useState } from 'react';
 

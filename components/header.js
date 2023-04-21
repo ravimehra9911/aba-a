@@ -18,7 +18,7 @@ const Header = () => {
         </div>
         <div>
           <p>
-            <span>arrow</span>MAIN MENU good
+            <span>arrow</span>MAIN MENU
           </p>
         </div>
         <div className="py-4">
@@ -29,6 +29,7 @@ const Header = () => {
         </div>
         <nav>
           <ul>
+            <li>HOMEE</li>
             <li>
               <Link href="/gernralCourses">GENERAL CEUs</Link>
             </li>
