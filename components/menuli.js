@@ -2,9 +2,11 @@ import Link from 'next/link';
 
 const menuli = ({ link, name }) => {
   return (
-    <li className="py-[33px] pl-[33px] border-b-2">
-      <Link href={link}>{name}</Link>
-    </li>
+    <Link className="" href={link}>
+      <li className="p14 font-interstateRegular py-[33px] pl-[33px] border-b hover:bg-yellowColor">
+        {name}
+      </li>
+    </Link>
   );
 };
 

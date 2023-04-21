@@ -8,12 +8,14 @@ module.exports = {
   theme: {
     colors: {
       yellowColor: '#FDFADB',
+      yellowColorDark: '#F5EBAC',
+      blackColor: '#2C2E31',
     },
     extend: {
       fontFamily: {
         interstateLight: ['Interstate-light', 'san-serif'],
         interstateRegular: ['Interstate-regular', 'san-serif'],
-        spaceMonoRegular: ['SpaceMono-Regular', 'sans'],
+        spaceMonoRegular: ['"Space Mono"', 'monospace'],
       },
     },
   },

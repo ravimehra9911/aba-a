@@ -15,10 +15,14 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'SpaceMono-Regular';
+  font-family: 'Space Mono', monospace;
   src: url('/assets/fonts/SpaceMono-Regular.otf');
   font-style: normal;
   font-display: swap;
+}
+
+body {
+  color: #2c2e31;
 }
 
 h1 {
@@ -63,6 +67,14 @@ h4 {
   font-size: 48px;
   line-height: 64px;
   letter-spacing: 0.02em;
+}
+
+.p96 {
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: 0em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
 }
 
 .c-btn {

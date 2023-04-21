@@ -4,7 +4,7 @@ const Check = () => {
       <div>
         <h1>Check Out</h1>
         <hr />
-        <h2>login</h2>
+        <p>login</p>
         <p>I need to create an account</p>
         <label for="fullName">Full Name</label>
         <input type="text" name="fullName" placeholder="Full Name" />
@@ -13,7 +13,7 @@ const Check = () => {
         <label for="loginpassword">Password</label>
         <input type="password" name="loginpassword" placeholder="Password" />
 
-        <h2>signup</h2>
+        <p>signup</p>
         <p>I already have an account</p>
         <label for="loginEmail">Email</label>
         <input type="email" name="loginEmail" placeholder="Email" />
@@ -22,7 +22,7 @@ const Check = () => {
       </div>
 
       <div>
-        <h2>order information</h2>
+        <p>order information</p>
         <hr />
         <label for="fullName">Full Name</label>
         <input type="text" name="fullName" placeholder="Full Name" />
@@ -38,14 +38,14 @@ const Check = () => {
       <div>
         <h1>Order review</h1>
         <div>
-          <h2>
+          <p>
             Building + Maintaining Rapport <span>1 General CEU</span>
-          </h2>
-          <h2>$ 5.00</h2>
+          </p>
+          <p>$ 5.00</p>
           <hr />
           <div>
-            <h2>Price in USD</h2>
-            <h2>$ 5.00</h2>
+            <p>Price in USD</p>
+            <p>$ 5.00</p>
           </div>
         </div>
       </div>
