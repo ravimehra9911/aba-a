@@ -2,26 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+@font-face {
+  font-family: 'interstate-light';
+  src: url('/assets/fonts/interstate-light.otf');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'interstate-regular';
+  src: url('/assets/fonts/interstate-regular.otf');
+  font-style: normal;
+  font-display: swap;
+}
+/* @font-face {
+  font-family: 'SpaceMono-regular';
+  src: url('/assets/fonts/SpaceMono-regular.otf');
+  font-style: normal;
+  font-display: swap;
+} */
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: 0;
+  font-weight: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 56px;
+  line-height: 80px;
+  letter-spacing: 5%;
+  font-weight: normal;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h3 {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 8%;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: 'Space Mono', monospace;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 8%;
+  font-weight: normal;
 }
