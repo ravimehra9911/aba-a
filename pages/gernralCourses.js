@@ -1,5 +1,5 @@
 import Cart from '@/components/cart';
-import { MinusIcon } from '@heroicons/react/24/outline';
+import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -19,6 +19,7 @@ const gernralCourses = () => {
   ];
 
   const [open, setOpen] = useState(false);
+  const [showCourses, setShowCourses] = useState(false);
 
   return (
     <div className="flex justify-center">
@@ -59,53 +60,61 @@ const gernralCourses = () => {
         </div>
         <div className="pt-[40px]">
           <div className="w-[820px]">
-            <button className="flex items-center justify-between w-full">
+            <button
+              onClick={() => setShowCourses(!showCourses)}
+              className="flex items-center justify-between w-full"
+            >
               <p className="p14 font-interstateRegular text-blackColor ">
                 Building + Maintaining Rapport
               </p>
-              <MinusIcon className="h-4 w-4" />
+              {showCourses == true ? (
+                <MinusIcon className="h-4 w-4" />
+              ) : (
+                <PlusIcon className="h-4 w-4" />
+              )}
             </button>
-
             <hr className="border-gray-200 mb-2 " />
-            <div className="border p-[19px] gap-4 flex justify-between items-center">
-              <div>
-                <Image
-                  src="/assets/images/aba-image.png"
-                  alt="course image"
-                  width="300"
-                  height="300"
-                />
-              </div>
-              <div>
-                <div className=" flex justify-between items-center">
-                  <p className="p14 font-interstateRegular">
-                    CEU: 1 General CEU
-                  </p>
-                  <p className="p14 font-interstateRegular">
-                    Instructor: Alberto Maldonado M.A., BCBA{' '}
-                  </p>
+            {showCourses && (
+              <div className="border p-[19px] gap-4 flex justify-between items-center">
+                <div>
+                  <Image
+                    src="/assets/images/aba-image.png"
+                    alt="course image"
+                    width="300"
+                    height="300"
+                  />
                 </div>
-                <p className="p14 font-interstateRegular">Date: March 2023</p>
-                <p className="p14 font-interstateLight">
-                  <span className="p14 font-interstateRegular">
-                    Course Description:
-                  </span>{' '}
-                  Here you will learn the fundamental schedules of reinforcement
-                  and how to implement them in real life! After all, this is
-                  APPLIED behavior analysis, right!?
-                </p>
-                <div className=" flex justify-between items-center">
-                  <p className="p14 font-interstateRegular">Price: $ 5.00</p>
-                  <button
-                    className="font-interstateLight p14 c-btn border-2"
-                    onClick={() => setOpen(true)}
-                  >
-                    ADD TO BASKET
-                  </button>
-                  <p className="p14 font-interstateRegular">Reviews *****</p>
+                <div>
+                  <div className=" flex justify-between items-center">
+                    <p className="p14 font-interstateRegular">
+                      CEU: 1 General CEU
+                    </p>
+                    <p className="p14 font-interstateRegular">
+                      Instructor: Alberto Maldonado M.A., BCBA{' '}
+                    </p>
+                  </div>
+                  <p className="p14 font-interstateRegular">Date: March 2023</p>
+                  <p className="p14 font-interstateLight">
+                    <span className="p14 font-interstateRegular">
+                      Course Description:
+                    </span>{' '}
+                    Here you will learn the fundamental schedules of
+                    reinforcement and how to implement them in real life! After
+                    all, this is APPLIED behavior analysis, right!?
+                  </p>
+                  <div className=" flex justify-between items-center">
+                    <p className="p14 font-interstateRegular">Price: $ 5.00</p>
+                    <button
+                      className="font-interstateLight p14 c-btn border-2"
+                      onClick={() => setOpen(true)}
+                    >
+                      ADD TO BASKET
+                    </button>
+                    <p className="p14 font-interstateRegular">Reviews *****</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
