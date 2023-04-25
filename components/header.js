@@ -38,6 +38,7 @@ const Header = () => {
             <MenuLi name="GENERAL CEUs" link="/gernralCourses" />
             <MenuLi name="SUPERVISION CEUs" link="/" />
             <MenuLi name="ETHICAL STANDARD CEUs" link="/" />
+            <MenuLi name="New Courese" link="/rise.360" />
           </ul>
         </nav>
       </div>
