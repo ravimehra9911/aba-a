@@ -31,7 +31,7 @@ const Cart = ({ open, setOpen }) => {
 
           <div className="flex justify-between">
             <button>EMPTY CART</button>
-            <Link href="/checkoutAba">
+            <Link href="/checkout">
               <button>CHECK OUT</button>
             </Link>
           </div>

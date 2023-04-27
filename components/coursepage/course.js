@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import { useState } from 'react';
 
 const course = () => {
   const [showCourses, setShowCourses] = useState(false);
+
   return (
     <div className="pt-[40px]">
       <div className="w-[820px]">

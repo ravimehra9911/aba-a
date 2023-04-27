@@ -34,7 +34,6 @@ h1 {
 }
 
 h2 {
-  font-family: 'Space Mono', monospace;
   font-size: 56px;
   line-height: 80px;
   letter-spacing: 5%;
@@ -42,18 +41,16 @@ h2 {
 }
 
 h3 {
-  font-family: 'Space Mono', monospace;
   font-size: 24px;
   line-height: 40px;
-  letter-spacing: 8%;
+  letter-spacing: 0.08em;
   font-weight: normal;
 }
 
 h4 {
-  font-family: 'Space Mono', monospace;
   font-size: 20px;
   line-height: 32px;
-  letter-spacing: 8%;
+  letter-spacing: 0.08em;
   font-weight: normal;
 }
 
@@ -87,4 +84,8 @@ h4 {
   border: 1px solid #2c2e31;
   border-radius: 8px;
   padding: 11px 24px;
+}
+
+input {
+  background: transparent;
 }
