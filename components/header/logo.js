@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const logo = () => {
+const Logo = () => {
   return (
     <div className="flex justify-center py-4">
       <Link href="/">
@@ -17,4 +17,4 @@ const logo = () => {
   );
 };
 
-export default logo;
+export default Logo;

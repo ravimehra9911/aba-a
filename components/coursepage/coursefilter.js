@@ -1,4 +1,4 @@
-const coursefilter = () => {
+const CourseFilter = () => {
   return (
     <div className="space-x-4 flex justify-center pt-[50px]">
       <select
@@ -34,4 +34,4 @@ const coursefilter = () => {
   );
 };
 
-export default coursefilter;
+export default CourseFilter;

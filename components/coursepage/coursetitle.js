@@ -1,4 +1,4 @@
-const coursetitle = ({ title }) => {
+const CourseTitle = ({ title }) => {
   return (
     <h1 className="p96 w-[820px] text-yellowColorDark text-center pt-[100px]">
       {title}
@@ -6,4 +6,4 @@ const coursetitle = ({ title }) => {
   );
 };
 
-export default coursetitle;
+export default CourseTitle;

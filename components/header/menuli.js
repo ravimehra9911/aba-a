@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const menuli = ({ link, name }) => {
+const Menuli = ({ link, name }) => {
   return (
     <Link className="" href={link}>
       <li className="p14 font-interstateRegular py-[33px] pl-[33px] border-b hover:bg-yellowColor">
@@ -10,4 +10,4 @@ const menuli = ({ link, name }) => {
   );
 };
 
-export default menuli;
+export default Menuli;

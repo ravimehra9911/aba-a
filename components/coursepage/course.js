@@ -3,7 +3,7 @@ import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Button from '../buttton';
 
-const course = ({ setOpen }) => {
+const Course = ({ setOpen }) => {
   const [showCourses, setShowCourses] = useState(false);
 
   return (
@@ -67,4 +67,4 @@ const course = ({ setOpen }) => {
   );
 };
 
-export default course;
+export default Course;

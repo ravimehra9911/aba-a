@@ -4,7 +4,7 @@ import Course from '@/components/coursepage/course';
 import Cart from '@/components/cart';
 import { useState } from 'react';
 
-const coursepage = () => {
+const CoursePage = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="flex justify-center">
@@ -18,4 +18,4 @@ const coursepage = () => {
   );
 };
 
-export default coursepage;
+export default CoursePage;
