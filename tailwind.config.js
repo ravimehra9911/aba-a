@@ -10,6 +10,7 @@ module.exports = {
       yellowColor: '#FDFADB',
       yellowColorDark: '#F5EBAC',
       blackColor: '#2C2E31',
+      whiteColor: '#FFFCFC',
     },
     extend: {
       fontFamily: {

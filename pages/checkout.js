@@ -226,18 +226,25 @@ const checkout = () => {
           </form>
         </div>
 
-        <div>
-          <h4 className="font-interstateRegular">REVIEW ORDER PAY</h4>
-          <div>
-            <p>
-              Building + Maintaining Rapport <span>1 General CEU</span>
+        <div className="pb-16">
+          <h4 className="font-interstateRegular border-b-[1px] mb-8">
+            REVIEW ORDER AND PAY
+          </h4>
+
+          <div className="flex justify-between pb-16 relative font-interstateRegular">
+            <p className="p14">
+              Building + Maintaining Rapport
+              <span className="absolute left-0 top-6 text-sm text-gray-200">
+                1 General CEU
+              </span>
             </p>
-            <p>$ 5.00</p>
-            <hr />
-            <div>
-              <p>Price in USD</p>
-              <p>$ 5.00</p>
-            </div>
+            <p className="p14">$ 5.00</p>
+          </div>
+
+          <div className="text-right  font-interstateRegular">
+            <p className="p14">
+              TOTAL <span className="pl-10">$ 5.00</span>
+            </p>
           </div>
         </div>
         <button>Proceed to payment</button>

@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { MinusIcon, PlusIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import Button from '../buttton';
 
-const course = () => {
+const course = ({ setOpen }) => {
   const [showCourses, setShowCourses] = useState(false);
 
   return (
@@ -50,12 +51,12 @@ const course = () => {
               </p>
               <div className=" flex justify-between items-center">
                 <p className="p14 font-interstateRegular">Price: $ 5.00</p>
-                <button
-                  className="font-interstateLight p14 c-btn border-2"
-                  onClick={() => setOpen(true)}
-                >
-                  ADD TO BASKET
-                </button>
+                <Button
+                  name="ADD TO BASKET"
+                  cssName="hover:bg-yellowColor"
+                  click={() => setOpen(true)}
+                />
+
                 <p className="p14 font-interstateRegular">Reviews *****</p>
               </div>
             </div>

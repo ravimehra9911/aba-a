@@ -1,3 +1,4 @@
+import React from 'react';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import MenuLi from './menuli';
 import Logo from './logo';
@@ -5,7 +6,7 @@ import Logo from './logo';
 const Header = () => {
   return (
     <div className=" w-1/4 flex justify-between flex-col border-r border-black">
-      <div className=" ">
+      <div className="flex justify-between flex-col h-full ">
         <div>
           <Logo />
           <div className="flex justify-center items-center border-y py-4">

@@ -8,10 +8,10 @@ const coursepage = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="flex justify-center">
-      <div className="relative">
+      <div>
         <CourseTitle title="general CEU courses" />
         <CourseFilter />
-        <Course />
+        <Course setOpen={setOpen} />
         <Cart open={open} setOpen={setOpen} />
       </div>
     </div>

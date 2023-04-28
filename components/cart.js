@@ -1,5 +1,6 @@
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Button from './buttton';
 
 const Cart = ({ open, setOpen }) => {
   return (
@@ -30,9 +31,9 @@ const Cart = ({ open, setOpen }) => {
           </div>
 
           <div className="flex justify-between">
-            <button>EMPTY CART</button>
+            <Button cssName="hover:bg-whiteColor " name="EMPTY" />
             <Link href="/checkout">
-              <button>CHECK OUT</button>
+              <Button cssName="hover:bg-whiteColor " name="CHECK OUT" />
             </Link>
           </div>
         </div>

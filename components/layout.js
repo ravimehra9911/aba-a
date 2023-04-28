@@ -4,7 +4,7 @@ const Layout = ({ children }) => {
   return (
     <div className="flex h-screen">
       <Header />
-      <main className="w-full">{children}</main>
+      <main className="w-full relative">{children}</main>
     </div>
   );
 };
