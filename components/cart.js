@@ -1,6 +1,7 @@
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import Button from './buttton';
+import Button from './Button';
+import React from 'react';
 
 const Cart = ({ open, setOpen }) => {
   return (

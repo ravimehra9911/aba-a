@@ -1,14 +1,17 @@
-export default function Home() {
+import React from 'react';
+import CircleButton from '@/components/CircleButton';
+
+const index = () => {
   return (
-    <div className="flex justify-between h-screen items-center p-[33px]">
-      <div className="p96 font-spaceMonoRegular text-yellowColorDark">
+    <div className="md:flex md:justify-between md:items-center md:h-full">
+      <div className="m-p48 px-8 pt-14 md:text-[96px] md:leading-[96px] font-spaceMonoRegular text-yellowColorDark ">
         explore <br></br> courses
       </div>
-      <div className="">
-        <p>image</p>
-        <p>image</p>
-        <p>image</p>
+      <div className="hidden md:block">
+        <CircleButton />
       </div>
     </div>
   );
-}
+};
+
+export default index;

@@ -8,14 +8,16 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Interstate-regular';
   src: url('/assets/fonts/interstate-regular.otf');
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Space Mono', monospace;
+  font-family: '"Space Mono"', monospace;
   src: url('/assets/fonts/SpaceMono-Regular.otf');
   font-style: normal;
   font-display: swap;
@@ -86,6 +88,27 @@ h4 {
   padding: 11px 24px;
 }
 
+.m-p48 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000000;
+}
+
 input {
   background: transparent;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #000;
+}
+.off {
+  color: #ccc;
 }

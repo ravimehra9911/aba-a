@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Button = ({ name, click, cssName }) => {
   return (
     <div>

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const CourseFilter = () => {
   return (
     <div className="space-x-4 flex justify-center pt-[50px]">
