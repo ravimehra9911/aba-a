@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import MenuLi from './menuli';
 import Logo from './logo';
