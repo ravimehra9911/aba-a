@@ -1,4 +1,6 @@
-const checkout = () => {
+import React from 'react';
+
+const Checkout = () => {
   return (
     <div className="bg-yellowColor p-[150px]">
       <div>
@@ -253,4 +255,4 @@ const checkout = () => {
   );
 };
 
-export default checkout;
+export default Checkout;

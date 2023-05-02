@@ -4,18 +4,17 @@ import Image from 'next/image';
 import Button from '../Button';
 import StarRating from './StarRating';
 
-const Course = (props, setOpen) => {
+const Course = (setOpen) => {
   const [showCourses, setShowCourses] = useState(false);
-
   return (
-    <div key={props.title} className="px-8">
+    <div className="px-8">
       <div className="">
         <button
           onClick={() => setShowCourses(!showCourses)}
           className="flex justify-between items-center w-full py-2"
         >
           <p className="p14 font-interstateRegular text-blackColor ">
-            {props.title}
+            Course One
           </p>
           {showCourses == true ? (
             <MinusIcon className="h-4 w-4" />
@@ -34,22 +33,18 @@ const Course = (props, setOpen) => {
               />
             </div>
             <div className="space-y-4">
-              <p className="p14 font-interstateRegular">CEU: {props.ceu}</p>
-              <p className="p14 font-interstateRegular">
-                Instructor: {props.instructor}
-              </p>
+              <p className="p14 font-interstateRegular">CEU: CEU 1</p>
+              <p className="p14 font-interstateRegular">Instructor: Ravi</p>
 
-              <p className="p14 font-interstateRegular">Date: {props.date}</p>
+              <p className="p14 font-interstateRegular">Date: 23-March-2004</p>
               <p className="p14 font-interstateLight">
                 <span className="p14 font-interstateRegular">
                   Course Description:
                 </span>
-                {props.description}
+                Description
               </p>
 
-              <p className="p14 font-interstateRegular">
-                Price: $ {props.price}
-              </p>
+              <p className="p14 font-interstateRegular">Price: $ 5.00</p>
               <Button
                 name="ADD TO BASKET"
                 cssName="hover:bg-yellowColor"
@@ -57,7 +52,7 @@ const Course = (props, setOpen) => {
               />
 
               <p className="p14 font-interstateRegular">
-                Reviews: <StarRating /> {props.reviews}
+                Reviews: <StarRating /> 4.6
               </p>
             </div>
           </div>
