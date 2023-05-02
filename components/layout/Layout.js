@@ -1,6 +1,6 @@
 import React from 'react';
 import Wrapper from './Wrapper';
-import Header from '../header/Headerr';
+import Header from '../header/Header';
 
 const Layout = ({ children }) => {
   return (
